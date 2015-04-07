@@ -63,8 +63,18 @@ public class StudentReg extends javax.swing.JPanel {
         jLabel18 = new javax.swing.JLabel();
         yearFeild = new javax.swing.JTextField();
         addAnotherB = new javax.swing.JButton();
+        AQ_NextB = new javax.swing.JButton();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        organizationFeild = new javax.swing.JTextField();
+        jLabel22 = new javax.swing.JLabel();
+        certificationFeild = new javax.swing.JTextField();
+        addAnotherB2 = new javax.swing.JButton();
         AA_NextB = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        detailsFeild = new javax.swing.JTextArea();
+        jLabel21 = new javax.swing.JLabel();
 
         setLayout(new java.awt.CardLayout());
 
@@ -196,7 +206,7 @@ public class StudentReg extends javax.swing.JPanel {
         add(jPanel1, "card3");
 
         jLabel13.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
-        jLabel13.setText("Academic Achievements");
+        jLabel13.setText("Academic Qualification");
 
         jLabel1.setText("Standard");
 
@@ -236,7 +246,7 @@ public class StudentReg extends javax.swing.JPanel {
 
         addAnotherB.setText("Add Another");
 
-        AA_NextB.setText("Next >");
+        AQ_NextB.setText("Next >");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -246,7 +256,7 @@ public class StudentReg extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(0, 147, Short.MAX_VALUE)
+                        .addGap(0, 159, Short.MAX_VALUE)
                         .addComponent(jLabel13))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -277,7 +287,7 @@ public class StudentReg extends javax.swing.JPanel {
                         .addComponent(qualNamFeild)
                         .addComponent(branchFeild)
                         .addComponent(yearFeild, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE))
-                    .addComponent(AA_NextB))
+                    .addComponent(AQ_NextB))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -312,24 +322,93 @@ public class StudentReg extends javax.swing.JPanel {
                 .addGap(36, 36, 36)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(addAnotherB)
-                    .addComponent(AA_NextB))
+                    .addComponent(AQ_NextB))
                 .addContainerGap(43, Short.MAX_VALUE))
         );
 
         add(jPanel2, "card3");
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 595, Short.MAX_VALUE)
+        jLabel19.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
+        jLabel19.setText("Academic Achievements");
+
+        jLabel20.setText("Organization");
+
+        organizationFeild.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                organizationFeildActionPerformed(evt);
+            }
+        });
+
+        jLabel22.setText("Certification Name");
+
+        addAnotherB2.setText("Add Another");
+
+        AA_NextB.setText("Next >");
+
+        detailsFeild.setColumns(20);
+        detailsFeild.setRows(5);
+        jScrollPane1.setViewportView(detailsFeild);
+
+        jLabel21.setText("Details");
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jLabel19))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createSequentialGroup()
+                                .addComponent(jLabel20)
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(addAnotherB2)
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
+                                        .addComponent(organizationFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(27, 27, 27)
+                                        .addComponent(jLabel22)))
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(AA_NextB)
+                            .addComponent(certificationFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(29, 29, 29))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel21)
+                        .addGap(50, 50, 50)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 423, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 328, Short.MAX_VALUE)
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel19)
+                        .addGap(42, 42, 42)
+                        .addComponent(jLabel20))
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(organizationFeild, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel22)
+                        .addComponent(certificationFeild, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel21))
+                .addGap(27, 27, 27)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(addAnotherB2)
+                    .addComponent(AA_NextB))
+                .addContainerGap(43, Short.MAX_VALUE))
         );
 
-        add(jPanel3, "card4");
+        add(jPanel4, "card3");
     }// </editor-fold>//GEN-END:initComponents
 
     private void instiFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_instiFieldActionPerformed
@@ -348,12 +427,20 @@ public class StudentReg extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_standardFeildActionPerformed
 
+    private void organizationFeildActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_organizationFeildActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_organizationFeildActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton AA_NextB;
+    private javax.swing.JButton AQ_NextB;
     private javax.swing.JButton addAnotherB;
+    private javax.swing.JButton addAnotherB2;
     private javax.swing.JTextField branchFeild;
+    private javax.swing.JTextField certificationFeild;
     private javax.swing.JTextField cgpaField;
+    private javax.swing.JTextArea detailsFeild;
     private javax.swing.JTextField instiField;
     private javax.swing.JButton jButton1;
     private javax.swing.JComboBox jComboBox1;
@@ -369,7 +456,11 @@ public class StudentReg extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -379,11 +470,13 @@ public class StudentReg extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField organizationFeild;
     private javax.swing.JTextField qualNamFeild;
     private javax.swing.JTextField rollTf;
     private javax.swing.JTextField standardFeild;
